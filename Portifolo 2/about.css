@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+   
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1); /* Fundo preto semi-transparente */
+}
+
+.header {
+    /* position: fixed;  */
+    background: #333; /* Cor de fundo padrão */
+    color: #fff; /* Cor do texto padrão */
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff; /* Cor do texto padrão */
+    text-decoration: none;
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.navbar a:hover {
+    color: #000000; 
+}
+
+.nome h2 {
+    margin: 0;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #012023;
+        width: 100%;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar a {
+        color: #fff;
+        transition: color 0.3s; 
+    }
+
+    .navbar a:hover {
+        color: #000000; 
+    }
+}
+ body { 
+margin-top: 20px;  
+} 
+/* body */
+.about-section {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(113, 113, 150, 0.9)); /* Gradiente de fundo */
+    padding: 40px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    color: #333; /* Cor do texto */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-container {
+    max-width: 800px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+.about-section h2 {
+    font-size: 2.5em; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.about-section p {
+    font-size: 1.2em; /* Tamanho do texto */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    margin-bottom: 15px; /* Espaçamento abaixo dos parágrafos */
+}
+.container-c {
+    /* max-width: 600px;  */
+    /* margin: 50px auto;  */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(113, 113, 150, 0.9)); /* Gradiente de fundo igual ao da seção sobre */
+    /* padding: 5px; */
+    /* background: white; */
+    /* border-radius: 8px;  */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+}
+
+h2 {
+    color: #004b87;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    color: #004b87;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    color: blue;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    width: 100%;
+}
